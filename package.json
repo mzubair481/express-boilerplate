@@ -80,12 +80,12 @@
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.5",
+    "@biomejs/biome": "2.5.6",
     "@types/compression": "1.8.1",
     "@types/cookie-parser": "1.4.10",
     "@types/cors": "2.8.19",
     "@types/express": "5.0.6",
-    "@types/node": "26.1.1",
+    "@types/node": "26.1.2",
     "@types/nodemailer": "8.0.1",
     "@types/pg": "8.20.0",
     "@types/supertest": "7.2.1",
