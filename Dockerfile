@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM node:24-bookworm-slim AS base
+FROM node:25-bookworm-slim AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable && corepack install --global pnpm@11.17.0
@@ -36,7 +36,7 @@ COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
 CMD ["pnpm", "dev"]
 
-FROM node:24-bookworm-slim AS production
+FROM node:25-bookworm-slim AS production
 LABEL org.opencontainers.image.title="Express + PostgreSQL Boilerplate" \
       org.opencontainers.image.description="Production-ready Express 5 and TypeScript API boilerplate with PostgreSQL and Drizzle ORM" \
       org.opencontainers.image.url="https://github.com/mzubair481/express-boilerplate" \
